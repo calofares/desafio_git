@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2.5px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    padding: 10px;
+    background-color:black;
+    align-items: center;
+}
+.header div{
+    padding: 0px;
+    color:white;
+    text-transform:uppercase;
+    font-size: 120%;
+}
+.header .menu{
+    display: flex;
+}
+
+.header .menu li{
+    display: flex;
+    margin: 7px;   
+    justify-items: flex-start;
+}
+.header .menu li a{
+    font-size: 90%;
+    text-decoration: none;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    padding: 7px;
+}
+.header .menu li a:hover{
+    background-color: grey;
+    transition: all .5s;
+}
+.index__grid{
+    display: grid;
+    /* background-image: url(../multimedia/img/index.jpg); */
+    background-color: red;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "historia reseña1"
+    "historia reseña2";
+    align-items: center;
+}
+.index__main__historia{
+    grid-area: historia;
+    background-color: aqua;
+}
+.index__main__reseña1{
+    grid-area: reseña_1;
+}
+.index__main__reseña2{
+    grid-area: reseña_2;
+}
+
+/* comienzo main INDEX */
+/* .index__main__image{
+    background-image: url(../multimedia/img/index.jpg);
+    height: 500px;
+    background-attachment: fixed;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: auto;
+    padding: 50px;
+    margin-bottom:5px;
+}
+.index__main__p{
+    display:inline-block;
+    font-family: 'M PLUS 2', sans-serif;
+    background-color: crimson;
+    padding: 15px;
+    margin: 70px;
+    margin-left: 60vh;
+} */
+/* fin main INDEX */
+
+
+/* comienzo main CONTACTO */
+/* .contacto__main{
+    background-color: thistle;
+    padding: 20px 600px;
+}
+.contacto__main h1{
+    background-color: aquamarine;
+    border: 5px dashed black;
+    width: 300px;
+    height: auto;
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+}
+.contacto__main .cuestionario h4{
+    background-color:chocolate;
+    border: 15px double black;
+    color: yellow;
+    width: 280px;
+    height: auto;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.contacto__main .cuestionario{
+    border: dashed red;
+    padding: 20px;
+}
+.contacto__main .cuestionario legend{
+    font-style: italic;
+} */
+/* final main CONTACTO */
+
+
+/* comienzo main NOSOTROS */
+/* .nosotros__main{
+    padding:20px;
+    background-color: green;
+}
+.nosotros__main section{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    background: red;
+    height: auto;
+    width: auto;
+    text-align: center;
+
+}
+.nosotros__main div{
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    background-color: indigo;
+    height: auto;
+    width: auto;
+    color: white;
+    border: 4px solid salmon;
+}
+.nosotros__main div img{
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    border: 4px dashed yellow;
+}
+.nosotros__main div h5{
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 5px;
+}
+.nosotros__main div p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+} */
+/* final main NOSOTROS */
+
+
+/* final main PRODUCTOS */
+/* .productos__main{
+    background-color: darkseagreen;
+}
+.productos__main h3{
+    text-align: center;
+    background-color: darkgreen;
+    padding: 10px;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 40px;
+}
+.productos__main .menu_prod{
+    position: relative;
+}
+.productos__main .menu_prod li{
+    margin: 100px;
+    display: block;
+    position: relative;  
+}
+.productos__main .menu_prod li a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: none;
+}
+.productos__main .menu_prod .submenu_prod{
+    position: relative;
+    display: none;
+}
+.productos__main .menu_prod li:hover .submenu_prod{
+    display: block;
+}
+.productos__main .menu_prod .submenu_prod .sub_submenu_prod{
+    position: relative;
+    display: none;
+}
+.productos__main .menu_prod .submenu_prod li:hover .sub_submenu_prod{
+    display: block;
+}
+.productos__mainain div img{
+    border-radius: 15px;
+} */
+/* final main PRODUCTOS */
+
+
+/* final main ZONAS */
+/* .zonas__main{
+    margin:50px;
+}
+.zonas__main div{
+    margin: 30px;
+}
+.zonas__main div h3{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.zonas__main .map{
+    background-color:cornflowerblue;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+    width: 740px;
+    margin-left: 600px;
+} */
+/* final main ZONAS */
+
+
+/* FOOTER */
+.footer div{
+    display: inline-block;
+    width: 25%;
+    margin: 30px;
+    margin-left: 10vh;
+}   
+.footer div p{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    padding-left: 170px;
+}
