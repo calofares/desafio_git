@@ -559,4 +559,93 @@
         color:white;
         font-style: oblique;
     }
+
+    .efectos{
+        display: grid;
+        grid-template-areas: 
+        "degrade"
+        "transicion"
+        "traslacion"
+        "rotacion"
+        "escalada";
+        grid-template-rows: repeat(5,20vh);
+        background: red;
+    }
+
+
+    .degrade{
+        display: grid;
+        background-image: linear-gradient(to top, red,aqua);
+        grid-area: degrade;
+        font-size: 50px;
+        text-align: center;
+        align-items:center;
+    }
+
+
+    .transicion{
+        height: 200px;
+        width: 200px;
+        background-color: yellow ;
+        transition: all 2s;
+    }
+    .transicion:hover{
+        width: 50%;
+        background-image: linear-gradient(to left, violet, orange);
+    }
+    
+
+    .trasl{
+        background: maroon;
+    }
+    .traslacion{
+        grid-area: traslacion;
+        transform: translate(650px, 100px);
+    }
+
+
+    .div_rotacion{
+        grid-area: rotacion;
+    }
+    .div_rotacion img{
+        height: 20vh;
+    }
+    .div_rotacion .rotacion{
+    transform: rotatez(90deg);
+    }
+
+
+    @keyframes efecto {
+        0%{
+            width: auto;
+        }
+        15%{
+            width: 100%;
+        }
+        30%{
+            width: 50%;
+            background:magenta;
+            color:black;
+            font-size: 40px;
+        }
+        60%{
+            background:mediumspringgreen;
+            color: red;
+            font-size: 70px;
+        }
+        100%{
+            background: black;
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .animacion{
+        width: 200px;
+        background:brown;
+        animation: efecto 3s linear 0s infinite;
+    }
+
+
+
 } 
